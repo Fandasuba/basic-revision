@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Expense Report</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="expense-form">
+            <fieldset>
+                <div class="form-grouping">
+                    <label for="expense-input">Expense:</label>
+                    <input id="expense-input" type="number" step="0.01" required placeholder="0.00">
+                </div>
+                <div class="form-grouping">
+                    <label for="expense-categories-dropdown">Expense Type:</label>
+                    <select id="expense-categories-dropdown" required>
+                        <option value="">Select category...</option>
+                        <option value="fuel">Fuel</option>
+                        <option value="travel">Travel</option>
+                        <option value="wfh">Work From Home</option>
+                    </select>
+                </div>
+                <div class="form-grouping-description">
+                    <label for="description-box">Include any details:</label>
+                    <textarea id="description-box" required placeholder="Enter description here..."></textarea>
+                </div>
+                <div class="form-grouping">
+                    <button type="submit">Add Expense</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    
+    <div class="expense-results">
+        <div class="results-list">
+        </div>
+        
+        <div class="expense-summary">
+            <h3>Summary</h3>
+            <div class="total-amount">Total: £0.00</div>
+        </div>
+    </div>
+</body>
+</html>
