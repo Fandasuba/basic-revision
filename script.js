@@ -30,8 +30,7 @@ function initializeApp() {
             const expenseElement = generateSavedExpenseReport(expense)
             document.getElementById("results-list").appendChild(expenseElement)
         })
-        
-        // Update total display
+
         totalExpense(totalItems)
     }
 }
