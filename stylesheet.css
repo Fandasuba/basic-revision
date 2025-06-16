@@ -85,6 +85,10 @@ color:green
             border: none;
             padding: 0;
         }
+        
+        .form-container h1{
+            padding-bottom: 15px;
+        }
 
         .form-grouping {
             display: flex;
@@ -111,12 +115,24 @@ color:green
         .form-grouping-description {
             margin-bottom: 20px;
         }
+        .form-grouping-description .title-box {
+            width: 100%;
+            height: 2.5rem;
+            padding: 12px;
+
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            resize: vertical;
+        }
 
         .form-grouping-description label {
             display: block;
             font-weight: bold;
             margin-bottom: 8px;
             color: #333;
+            padding-top: 10px;
         }
 
         .form-grouping-description textarea {
@@ -129,6 +145,7 @@ color:green
             font-size: 14px;
             resize: vertical;
         }
+
 
         button {
             background-color: #007bff;
